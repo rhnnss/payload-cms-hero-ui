@@ -20,6 +20,9 @@ importers:
       '@hookform/resolvers':
         specifier: ^5.1.1
         version: 5.1.1(react-hook-form@7.60.0(react@19.1.0))
+      '@mantine/hooks':
+        specifier: ^8.2.1
+        version: 8.2.1(react@19.1.0)
       '@payloadcms/db-postgres':
         specifier: 3.48.0
         version: 3.48.0(payload@3.48.0(graphql@16.11.0)(typescript@5.7.3))
@@ -2333,6 +2336,11 @@ packages:
     resolution: {integrity: sha512-rKHpUEd3nrvMY7ghmOC0AeGSYT7YIviba+JViaOzrCX4/Wtv5C/3Sl7Io12Z9k+s1BKmy7C28bOdQHvRWaD7vQ==}
     peerDependencies:
       yjs: '>=13.5.22'
+
+  '@mantine/hooks@8.2.1':
+    resolution: {integrity: sha512-gnRDk5FXCD9fa0AjlAj9otCsZL9QJzVrpYZk9KjOEoP5XR1TEE2F9/rGbajh1UVjPnD3jUlNLRJMH0YHTlA65A==}
+    peerDependencies:
+      react: ^18.x || ^19.x
 
   '@monaco-editor/loader@1.5.0':
     resolution: {integrity: sha512-hKoGSM+7aAc7eRTRjpqAZucPmoNOC4UUbknb/VNoTkEIkCPhqV8LfbsgM1webRM7S/z21eHEx9Fkwx8Z/C/+Xw==}
@@ -10387,6 +10395,10 @@ snapshots:
       '@lexical/selection': 0.28.0
       lexical: 0.28.0
       yjs: 13.6.27
+
+  '@mantine/hooks@8.2.1(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
 
   '@monaco-editor/loader@1.5.0':
     dependencies:
