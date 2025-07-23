@@ -1,4 +1,6 @@
 import React from 'react'
+import { HeroUIProvider } from '@heroui/react'
+
 import './styles.css'
 
 export const metadata = {
@@ -12,7 +14,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <HeroUIProvider>
+          <main>{children}</main>
+        </HeroUIProvider>
       </body>
     </html>
   )
