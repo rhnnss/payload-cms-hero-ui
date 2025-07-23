@@ -1,4 +1,5 @@
 import { withPayload } from "@payloadcms/next/withPayload";
+import withPWA from "next-pwa";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -14,4 +15,11 @@ const nextConfig = {
   },
 };
 
-export default withPayload(nextConfig, { devBundleServerPackages: false });
+const withPWAConfig = withPWA({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === "development",
+})(nextConfig);
+
+export default withPayload(withPWAConfig, { devBundleServerPackages: false });
