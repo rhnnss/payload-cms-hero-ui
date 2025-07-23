@@ -60,8 +60,8 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return (
-    <html lang="id">
-      <body>
+    <html lang="id" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers
           themeProps={{
             attribute: "class",
