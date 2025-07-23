@@ -1,6 +1,6 @@
 import React from "react";
-import { HeroUIProvider } from "@heroui/react";
 import { Metadata } from "next";
+import { Providers } from "./providers";
 
 import "./styles.css";
 
@@ -62,9 +62,15 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="id">
       <body>
-        <HeroUIProvider>
+        <Providers
+          themeProps={{
+            attribute: "class",
+            defaultTheme: "dark",
+            themes: ["light", "dark"],
+          }}
+        >
           <main>{children}</main>
-        </HeroUIProvider>
+        </Providers>
       </body>
     </html>
   );

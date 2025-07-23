@@ -21,6 +21,7 @@
     "@heroui/react": "^2.8.1",
     "@heroui/system": "^2.4.19",
     "@heroui/theme": "^2.4.19",
+    "@hookform/resolvers": "^5.1.1",
     "@payloadcms/db-postgres": "3.48.0",
     "@payloadcms/next": "3.48.0",
     "@payloadcms/payload-cloud": "3.48.0",
@@ -28,6 +29,8 @@
     "@payloadcms/ui": "3.48.0",
     "@react-types/shared": "^3.31.0",
     "@tailwindcss/postcss": "^4.1.11",
+    "@tanstack/react-query": "^5.83.0",
+    "@tanstack/react-query-devtools": "^5.83.0",
     "cross-env": "^7.0.3",
     "dotenv": "16.4.7",
     "framer-motion": "^12.23.6",
@@ -38,10 +41,13 @@
     "payload": "3.48.0",
     "postcss": "^8.5.6",
     "react": "19.1.0",
+    "react-hook-form": "^7.60.0",
     "sharp": "0.34.2",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
+    "@hookform/devtools": "^4.4.0",
     "@playwright/test": "1.50.0",
     "@testing-library/react": "16.3.0",
     "@types/node": "^22.5.4",
