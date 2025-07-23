@@ -17,7 +17,7 @@ export default async function HomePage() {
 
   return (
     <div className="home">
-      <div className="content">
+      <div className="content border border-red-600">
         <picture>
           <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg" />
           <Image
@@ -31,7 +31,7 @@ export default async function HomePage() {
         {user && <h1>Welcome back, {user.email}</h1>}
         <div className="links">
           <a
-            className="admin"
+            className="admin text-3xl"
             href={payloadConfig.routes.admin}
             rel="noopener noreferrer"
             target="_blank"
